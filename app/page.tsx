@@ -196,10 +196,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id='contact'
-          className='min-h-screen bg-white py-20 border-b-8 border-black'
-        >
+        <section id='contact' className='min-h-screen bg-white py-20'>
           <div className='max-w-7xl mx-auto px-6 lg:px-10'>
             <div className='space-y-16'>
               <div className='text-center space-y-4'>
