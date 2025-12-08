@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Contact } from './components/contact/Contact';
 
 export default function Home() {
   return (
@@ -53,12 +54,12 @@ export default function Home() {
                   <div className='h-2 w-32 bg-[#304CC9]'></div>
                 </div>
                 <p className='text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed'>
-                  AI • ML • WEB DEVELOPMENT
+                  AI • ML DEVELOPMENT
                 </p>
                 <p className='text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl'>
                   Transforming ideas into intelligent solutions. We specialize
-                  in artificial intelligence, machine learning, and cutting-edge
-                  web development that drives your business forward.
+                  in artificial intelligence and machine learning that drives
+                  your business forward.
                 </p>
                 <div className='flex gap-4 pt-4'>
                   <a
@@ -102,7 +103,7 @@ export default function Home() {
                 <div className='h-2 w-24 bg-[#304CC9] mx-auto'></div>
               </div>
 
-              <div className='grid md:grid-cols-3 gap-8'>
+              <div className='grid md:grid-cols-2 gap-8'>
                 <div className='bg-gray-900 p-8 border-4 border-white space-y-4'>
                   <div className='text-[#304CC9] text-5xl font-black mb-4'>
                     AI
@@ -131,20 +132,6 @@ export default function Home() {
                     into competitive advantages.
                   </p>
                 </div>
-
-                <div className='bg-gray-900 p-8 border-4 border-white space-y-4'>
-                  <div className='text-[#304CC9] text-5xl font-black mb-4'>
-                    WEB
-                  </div>
-                  <h3 className='text-2xl font-bold uppercase'>
-                    Web Development
-                  </h3>
-                  <p className='text-gray-300 leading-relaxed'>
-                    Modern, scalable, and performant web applications. We craft
-                    digital experiences using cutting-edge technologies,
-                    ensuring your platform is fast, secure, and user-centric.
-                  </p>
-                </div>
               </div>
               <div className='bg-gray-900 p-12 border-4 border-white mt-12'>
                 <div className='grid md:grid-cols-2 gap-12 items-center'>
@@ -155,9 +142,8 @@ export default function Home() {
                     <p className='text-lg text-gray-300 leading-relaxed'>
                       At Celentis, we believe technology should be accessible,
                       powerful, and transformative. We combine the latest
-                      advances in AI and ML with exceptional web development to
-                      create solutions that don&apos;t just meet your needs—they
-                      exceed expectations.
+                      advances in AI and ML to create solutions that don&apos;t
+                      just meet your needs—they exceed expectations.
                     </p>
                     <p className='text-lg text-gray-300 leading-relaxed'>
                       Every project is an opportunity to push boundaries,
@@ -196,161 +182,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id='contact' className='min-h-screen bg-white py-20'>
-          <div className='max-w-7xl mx-auto px-6 lg:px-10'>
-            <div className='space-y-16'>
-              <div className='text-center space-y-4'>
-                <h2 className='text-5xl md:text-7xl font-black text-black uppercase tracking-tight'>
-                  Contact Us
-                </h2>
-                <div className='h-2 w-24 bg-[#304CC9] mx-auto'></div>
-                <p className='text-xl text-gray-700 max-w-2xl mx-auto'>
-                  Ready to transform your business? Let&apos;s discuss how we
-                  can help you achieve your goals.
-                </p>
-              </div>
-              <div className='grid md:grid-cols-2 gap-12'>
-                <div className='space-y-8'>
-                  <div className='bg-black p-8 border-4 border-[#304CC9]'>
-                    <h3 className='text-2xl font-black text-white uppercase mb-6'>
-                      Get In Touch
-                    </h3>
-                    <div className='space-y-6'>
-                      <div className='flex items-start gap-4'>
-                        <div className='text-[#304CC9] text-2xl font-black'>
-                          →
-                        </div>
-                        <div>
-                          <div className='text-white font-bold uppercase text-sm mb-1'>
-                            Email
-                          </div>
-                          <a
-                            href='mailto:info@celentis.dev'
-                            className='text-gray-300 hover:text-[#304CC9] transition-colors'
-                          >
-                            info@celentis.dev
-                          </a>
-                        </div>
-                      </div>
-                      <div className='flex items-start gap-4'>
-                        <div className='text-[#304CC9] text-2xl font-black'>
-                          →
-                        </div>
-                        <div>
-                          <div className='text-white font-bold uppercase text-sm mb-1'>
-                            Phone
-                          </div>
-                          <a
-                            href='tel:+1234567890'
-                            className='text-gray-300 hover:text-[#304CC9] transition-colors'
-                          >
-                            +90 548 412 1546
-                          </a>
-                        </div>
-                      </div>
-                      <div className='flex items-start gap-4'>
-                        <div className='text-[#304CC9] text-2xl font-black'>
-                          →
-                        </div>
-                        <div>
-                          <div className='text-white font-bold uppercase text-sm mb-1'>
-                            Location
-                          </div>
-                          <div className='text-gray-300'>
-                            30 N Gould St, STE R
-                            <br />
-                            Sheridan, WY 82801, USA
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='bg-gray-100 p-8 border-4 border-black'>
-                    <h3 className='text-xl font-black text-black uppercase mb-4'>
-                      Why Choose Celentis?
-                    </h3>
-                    <ul className='space-y-3 text-gray-700'>
-                      <li className='flex items-start gap-2'>
-                        <span className='text-[#304CC9] font-black'>■</span>
-                        <span>Expert team with years of experience</span>
-                      </li>
-                      <li className='flex items-start gap-2'>
-                        <span className='text-[#304CC9] font-black'>■</span>
-                        <span>Cutting-edge technology stack</span>
-                      </li>
-                      <li className='flex items-start gap-2'>
-                        <span className='text-[#304CC9] font-black'>■</span>
-                        <span>Agile development methodology</span>
-                      </li>
-                      <li className='flex items-start gap-2'>
-                        <span className='text-[#304CC9] font-black'>■</span>
-                        <span>Dedicated support and maintenance</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className='bg-gray-900 p-8 border-4 border-black'>
-                  <h3 className='text-2xl font-black text-white uppercase mb-6'>
-                    Send Us A Message
-                  </h3>
-                  <form className='space-y-6'>
-                    <div>
-                      <label
-                        htmlFor='name'
-                        className='block text-white font-bold uppercase text-sm mb-2'
-                      >
-                        Name
-                      </label>
-                      <input
-                        type='text'
-                        id='name'
-                        name='name'
-                        required
-                        className='w-full bg-black text-white border-4 border-white px-4 py-3 font-bold focus:border-[#304CC9] focus:outline-none transition-colors'
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor='email'
-                        className='block text-white font-bold uppercase text-sm mb-2'
-                      >
-                        Email
-                      </label>
-                      <input
-                        type='email'
-                        id='email'
-                        name='email'
-                        required
-                        className='w-full bg-black text-white border-4 border-white px-4 py-3 font-bold focus:border-[#304CC9] focus:outline-none transition-colors'
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor='message'
-                        className='block text-white font-bold uppercase text-sm mb-2'
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        id='message'
-                        name='message'
-                        rows={6}
-                        required
-                        className='w-full bg-black text-white border-4 border-white px-4 py-3 font-bold focus:border-[#304CC9] focus:outline-none transition-colors resize-none'
-                      ></textarea>
-                    </div>
-                    <button
-                      type='submit'
-                      className='w-full bg-[#304CC9] text-white px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-black transition-colors border-4 border-white'
-                    >
-                      Send Message
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Contact />
       </main>
       <footer className='bg-black text-white border-t-4 border-[#304CC9]'>
         <div className='max-w-7xl mx-auto px-6 lg:px-10 py-12'>
@@ -364,8 +196,8 @@ export default function Home() {
                 className='brightness-0 invert mb-4'
               />
               <p className='text-gray-400 text-sm'>
-                Transforming ideas into intelligent solutions through AI, ML,
-                and web development.
+                Transforming ideas into intelligent solutions through AI and ML
+                development.
               </p>
             </div>
             <div>
@@ -406,7 +238,6 @@ export default function Home() {
               <ul className='space-y-2 text-gray-400 text-sm'>
                 <li>Artificial Intelligence</li>
                 <li>Machine Learning</li>
-                <li>Web Development</li>
               </ul>
             </div>
           </div>
